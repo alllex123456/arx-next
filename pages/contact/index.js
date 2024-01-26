@@ -1,16 +1,10 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
+
 import Head from 'next/head';
 import Section from '@/components/common/Section';
 import Light from '@/components/common/Light';
 import Hero from '@/components/Hero/Hero';
-import SectionHeading from '@/components/common/SectionHeading';
-import CardServices from '@/components/cards/CardServices';
-import FormImage from '@/public/images/contact-1.webp';
-
-import { pageTransition } from '@/variants/pages';
-import Image from 'next/image';
 import Button from '@/components/common/Button';
 
 const Contact = () => {
@@ -32,6 +26,7 @@ const Contact = () => {
         message: form.message,
       }),
     });
+
     if (response.ok) {
       setSuccess('Your message has been successfully received!');
     } else {
@@ -93,12 +88,14 @@ const Contact = () => {
               />
             </div>
 
-            <div className="flex gap-6 items-end justify-start">
+            <div className="flex gap-6 items-center justify-start">
               <Button
                 label={`${isSubmitting ? 'loading' : 'Send'}`}
                 className="w-[20rem] cursor-pointer text-center py-6 px-10 rounded uppercase font-bold bg-[--blue-20] transition duration-200 hover:bg-[--blue-10]"
               />
-              {success ? <p>{success}</p> : <p>{error}</p>}
+              <span className={`${success ? '' : 'font-bold text-red-500'}`}>
+                {success ? success : error}
+              </span>
             </div>
           </form>
         </div>

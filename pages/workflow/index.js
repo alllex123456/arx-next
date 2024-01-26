@@ -133,7 +133,7 @@ const WorkFlow = () => {
                         secondaryIndex === 0
                           ? 'border-r border-[--gray-60] md:border-r-0 border-b'
                           : ''
-                      }`}
+                      } md:p-10`}
                     >
                       <h6 className="text-black mb-10">{card.title}</h6>
                       {card.text.map((p, index) => (

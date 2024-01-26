@@ -95,8 +95,8 @@ const WorkFlow = () => {
             PLEASE NOTE: Prices are indicative and shown for transparency
             purposes.
           </p>
-          <div className="flex gap-[10rem] mt-20 items-center ||| md:flex-col gap-0">
-            <div>
+          <div className="flex gap-[10rem] mt-20 items-center ||| md:flex-col md:gap-0 md:justify-center">
+            <div className="text-center">
               <h4>You can contact us for a tailored offer</h4>
               <p>Just send us your e-mail and will get back to you shortly.</p>
             </div>
@@ -106,8 +106,8 @@ const WorkFlow = () => {
                 placeholder="john@email.com"
                 className="p-10 rounded-[--border-radius] w-[100%] text-[--gray-100] text-4xl"
               />
-              <button className="absolute top-[20%] right-4 -translate-y-[20%] flex items-center justify-center rounded-full bg-[--blue-80] text-[--blue-10] text-6xl w-[6rem] h-[6rem] pb-2 transition duration-300 hover:bg-[--blue-60] hover:text-white">
-                &rarr;
+              <button className="absolute top-[26%] right-4 -translate-y-[20%] flex items-center justify-center rounded-full bg-[--blue-80] text-[--blue-10] text-6xl w-[6rem] h-[6rem] pb-2 transition duration-300 hover:bg-[--blue-60] hover:text-white">
+                <span className="-mt-2">&rarr;</span>
               </button>
             </div>
           </div>
