@@ -1,27 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Slabo+27px&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --font-display: 'Slabo 27px', serif;
+  --font-body: 'Lato', sans-serif;
+
+  --blue-100: #040f1a;
+  --blue-90: #081f35;
+  --blue-80: #0b2c4d;
+  --blue-60: #19538e;
+  --blue-40: #1b67b3;
+  --blue-20: #2284e6;
+  --blue-10: #3399ff;
+  --gray-100: #495057;
+  --gray-80: #868e96;
+  --gray-60: #adb5bd;
+  --gray-40: #ced4da;
+  --gray-20: #e9ecef;
+  --gray-10: #f1f3f5;
+
+  --padding: 2.4rem;
+  --width: 140rem;
+  --border-radius: 5px;
+  --line-h: 200%;
+  --paragraph-h: 1.3rem;
+  --flex-gap-large: 3.6rem;
+  --flex-gap-small: 2.4rem;
+  --section-padding: 10rem;
+  --card-padding: 4rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  color: var(--gray-40);
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+li {
+  line-height: var(--line-h);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), serif;
+  color: var(--gray-20);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 5rem;
+}
+h3 {
+  font-size: 4rem;
+}
+h4 {
+  font-size: 3rem;
+}
+h5 {
+  font-size: 2.5rem;
+}
+h6 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: var(--line-h);
+  margin-bottom: var(--paragraph-h);
+}
+
+.caption,
+label {
+  font-size: 1.4rem;
+}
+
+hr {
+  color: var(--gray-40);
 }
