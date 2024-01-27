@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^14.1.0",
     "@phosphor-icons/react": "^2.0.15",
     "framer-motion": "^10.18.0",
     "js-beautify": "^1.14.11",

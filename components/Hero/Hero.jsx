@@ -22,8 +22,8 @@ const Hero = ({ heading, home, animationKey }) => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.1 }}
-          transition={{ duration: 2 }}
-          className="absolute top-0 left-0 w-full h-full transition duration-200"
+          transition={{ duration: 1 }}
+          className="absolute top-0 left-0 w-full h-full"
           style={{
             background: 'url(/images/hero-background.webp)',
             backgroundRepeat: 'no-repeat',

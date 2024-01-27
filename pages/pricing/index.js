@@ -100,14 +100,14 @@ const WorkFlow = () => {
               <h4>You can contact us for a tailored offer</h4>
               <p>Just send us your e-mail and will get back to you shortly.</p>
             </div>
-            <div className="relative grow">
+            <div className="relative">
               <input
                 type="email"
                 placeholder="john@email.com"
                 className="p-10 rounded-[--border-radius] w-[100%] text-[--gray-100] text-4xl"
               />
-              <button className="absolute top-[26%] right-4 -translate-y-[20%] flex items-center justify-center rounded-full bg-[--blue-80] text-[--blue-10] text-6xl w-[6rem] h-[6rem] pb-2 transition duration-300 hover:bg-[--blue-60] hover:text-white">
-                <span className="-mt-2">&rarr;</span>
+              <button className="absolute top-[30%] right-4 -translate-y-[20%] flex items-center justify-center rounded-full bg-[--blue-80] text-[--blue-10] text-4xl w-[4rem] h-[4rem] pb-2 transition duration-300 hover:bg-[--blue-60] hover:text-white">
+                <span className="">&rarr;</span>
               </button>
             </div>
           </div>

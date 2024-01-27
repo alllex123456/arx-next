@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="flex relative gap-10">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="relative z-20 flex flex-col gap-[5rem] flex-1"
+            className="relative z-10 flex flex-col gap-[5rem] flex-1 ||| md:gap-[2rem]"
           >
             <div className="flex flex-col gap-2">
               <label htmlFor="name">Your name</label>
