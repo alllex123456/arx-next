@@ -33,12 +33,12 @@ const CardPricing = ({ title, price, list, button, highlight }) => {
           <li key={index}>{item}</li>
         ))}
       </ul>
-      <Button
+      {/* <Button
         type="blue"
         label={button.label}
         onClick={button.onClick}
         className="mx-auto"
-      />
+      /> */}
     </div>
   );
 };
