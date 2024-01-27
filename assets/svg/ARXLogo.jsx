@@ -3,7 +3,7 @@ import React from 'react';
 function ARXLogo({ className }) {
   return (
     <svg
-      className={`${className} hover:fill-[--blue-10]`}
+      className={`hover:fill-[--blue-10] ${className} hover:fill-[--blue-10]`}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 537 122"
