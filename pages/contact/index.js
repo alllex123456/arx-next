@@ -55,7 +55,7 @@ const Contact = () => {
         />
       </div>
 
-      <Section>
+      <Section className="">
         <div className="flex relative gap-10">
           <form
             onSubmit={handleSubmit(onSubmit)}

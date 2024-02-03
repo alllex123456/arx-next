@@ -131,7 +131,7 @@ const WorkFlow = () => {
                       key={secondaryIndex}
                       className={`text-[--gray-100] p-[5rem] basis-[50%] ${
                         secondaryIndex === 0
-                          ? 'border-r border-[--gray-60] md:border-r-0 border-b'
+                          ? 'border-r border-[--gray-60] md:border-r-0 md:border-b'
                           : ''
                       } md:p-10`}
                     >

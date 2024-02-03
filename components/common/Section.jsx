@@ -7,7 +7,7 @@ const Section = ({ children }) => {
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ type: 'tween', duration: 0.5 }}
-      className="max-w-[--width] mx-auto px-[--padding] py-[--section-padding] xl:py-14"
+      className="max-w-[--width] mx-auto py-[--section-padding] xl:py-14"
     >
       {children}
     </motion.div>

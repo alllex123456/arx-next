@@ -1,8 +1,9 @@
-import React from 'react';
+import { useRouter } from 'next/router';
 import Label from '../common/Label';
 import Button from '../common/Button';
 
 const CTA = () => {
+  const router = useRouter();
   return (
     <div className="relative rounded-[--border-radius] border border-[--blue-20] flex flex-col gap-10 justify-center items-end p-[5rem] px-[--padding] mx-[--padding] h-[30rem] mt-[4.8rem] shadow-lg shadow-[--blue-80] lg:items-center">
       <Label title="Design & Engineering" />
@@ -22,7 +23,7 @@ const CTA = () => {
         <Button
           type="white"
           label="Find out how"
-          onClick={() => {}}
+          onClick={() => router.push('/workflow')}
           className="mt-auto ml-[2.5rem]"
         />
       </div>
