@@ -18,7 +18,7 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (form) => {
-    const response = await fetch('/api/send', {
+    const response = await fetch('/api/sendgrid', {
       method: 'POST',
       body: JSON.stringify({
         name: form.name,
