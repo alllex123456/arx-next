@@ -34,7 +34,7 @@ const Contact = () => {
     }
   };
 
-  const inputStyle = 'py-6 px-4 rounded text-[1.8rem] text-[--gray-100]';
+  const inputStyle = 'py-4 px-2 rounded text-[1.6rem] text-[--gray-100]';
 
   return (
     <main>
@@ -56,10 +56,10 @@ const Contact = () => {
       </div>
 
       <Section className="">
-        <div className="flex relative gap-10">
+        <div className="flex relative gap-10 justify-center">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="relative z-10 flex flex-col gap-[5rem] flex-1 ||| md:gap-[2rem]"
+            className="relative max-w-[80rem] z-10 flex flex-col gap-[5rem] flex-1 ||| md:gap-[2rem]"
           >
             <div className="flex flex-col gap-2">
               <label htmlFor="name">Your name</label>
@@ -91,7 +91,7 @@ const Contact = () => {
             <div className="flex gap-6 items-center justify-start">
               <Button
                 label={`${isSubmitting ? 'loading' : 'Send'}`}
-                className="w-[20rem] cursor-pointer text-center py-6 px-10 rounded uppercase font-bold bg-[--blue-20] transition duration-200 hover:bg-[--blue-10]"
+                className="w-[20rem] cursor-pointer text-center py-4 px-10 rounded uppercase font-bold bg-[--blue-20] transition duration-200 hover:bg-[--blue-10]"
               />
               <span className={`${success ? '' : 'font-bold text-red-500'}`}>
                 {success ? success : error}

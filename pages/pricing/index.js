@@ -107,7 +107,7 @@ const WorkFlow = () => {
                 className="w-[100%] p-10 rounded-[--border-radius] w-[100%] text-[--gray-100] text-4xl"
               />
               <button className="absolute top-[30%] right-4 -translate-y-[20%] flex items-center justify-center rounded-full bg-[--blue-80] text-[--blue-10] text-4xl w-[4rem] h-[4rem] pb-2 transition duration-300 hover:bg-[--blue-60] hover:text-white">
-                <span className="">&rarr;</span>
+                <span className="mt-2">&rarr;</span>
               </button>
             </div>
           </div>

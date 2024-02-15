@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-display: 'Slabo 27px', serif;
-  --font-body: 'Lato', sans-serif;
+  --font-display: 'Raleway', serif;
+  --font-body: 'PT Sans', sans-serif;
 
   --blue-100: #040f1a;
   --blue-90: #081f35;
