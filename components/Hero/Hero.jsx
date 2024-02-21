@@ -38,7 +38,7 @@ const Hero = ({ heading, home, animationKey }) => {
         {home ? (
           <div className="tracking-tight w-[70%] text-center">
             <h1 className="||| md:text-[5rem]">{heading}</h1>
-            <h5 className="text-[--gray-60] ||| xl:w-[50%] lg:text-center sm:text-[2rem]">
+            <h5 className="text-[--gray-60] ||| lg:text-center sm:text-[2rem]">
               Technology and Refined Design Harmonize to Elevate Your Online
               Presence to Unprecedented Heights of Sophistication and Success
             </h5>
