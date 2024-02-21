@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
 
-import CTA from './CTA';
-import Label from '../common/Label';
 import { heroBackgroundTransition } from '@/variants/pages';
 
 const Hero = ({ heading, home, animationKey }) => {
@@ -14,8 +12,8 @@ const Hero = ({ heading, home, animationKey }) => {
       exit="exit"
       className={`relative ${
         home
-          ? 'h-screen flex items-center justify-center ||| lg:h-[100%] lg:mt-[8rem]'
-          : 'bg-[--blue-40] mt-[10rem] rounded-[--border-radius] max-w-[--width] mx-auto ||| md:mt-10'
+          ? 'h-[93vh] flex items-center justify-center ||| lg:h-[100%] lg:mt-[8rem]'
+          : 'mt-[10rem] rounded-[--border-radius] max-w-[--width] mx-auto ||| md:mt-10'
       }`}
     >
       {home && (
@@ -38,23 +36,26 @@ const Hero = ({ heading, home, animationKey }) => {
         }`}
       >
         {home ? (
-          <h1 className="tracking-tight w-[70%] text-center ||| md:text-[5rem]">
-            {heading}
-          </h1>
+          <div className="tracking-tight w-[70%] text-center">
+            <h1 className="||| md:text-[5rem]">{heading}</h1>
+            <h5 className="text-[--gray-60] ||| xl:w-[50%] lg:text-center sm:text-[2rem]">
+              Technology and Refined Design Harmonize to Elevate Your Online
+              Presence to Unprecedented Heights of Sophistication and Success
+            </h5>
+          </div>
         ) : (
           <motion.div
             variants={heroBackgroundTransition}
             initial="initial"
             animate="animate"
             exit="exit"
-            className="py-[20rem] w-[70%] z-10 ||| md:py-10 md:w-full px-10"
+            className="h-[50vh] tracking-tight w-[70%] text-center flex flex-col items-center justify-center"
           >
-            <Label size="large" title={heading.label} />
             <h1 className="text-white ||| md:text-[5rem]">{heading.title}</h1>
             <h6 className="||| md:text-[1.6rem]">{heading.subtitle}</h6>
           </motion.div>
         )}
-        {home && <CTA />}
+        {/* {home && <CTA />} */}
       </div>
     </motion.div>
   );

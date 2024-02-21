@@ -8,16 +8,16 @@ const SectionHeading = ({ size, title, text, noPadding }) => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ type: 'tween', duration: 1 }}
-      className={`max-w-[--width] mx-auto rounded-[--border-radius] ${
-        noPadding ? '' : 'mt-[5rem]'
-      }`}
+      className={`max-w-[--width] mx-auto ${noPadding ? '' : 'mt-[5rem]'}`}
     >
       <div
-        className={`relative max-w-[--width] py-[4.8rem] flex flex-col gap-2 z-10 bg-[--blue-90] px-[--padding]
+        className={`relative max-w-[--width] pt-[4.8rem] pb-[2.4rem] flex flex-col gap-2 z-10 rounded-[--border-radius]
         }`}
       >
         <Label size={size} title={title} text={text} />
-        <h3 className="max-w-[80rem] ||| md:text-[2.5rem]">{text}</h3>
+        <h3 className="text-[--gray-60] max-w-[80rem] ||| md:text-[2.5rem]">
+          {text}
+        </h3>
       </div>
     </motion.div>
   );

@@ -65,7 +65,7 @@ body {
   overflow-x: hidden;
   font-family: var(--font-body);
   font-size: 1.6rem;
-  color: var(--gray-40);
+  color: var(--gray-60);
 }
 
 ul {
@@ -84,12 +84,12 @@ h4,
 h5,
 h6 {
   font-family: var(--font-display), serif;
-  color: var(--gray-20);
   line-height: 1.2;
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 8rem;
+  color: var(--gray-20);
 }
 h2 {
   font-size: 5rem;

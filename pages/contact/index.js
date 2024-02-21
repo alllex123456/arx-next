@@ -34,7 +34,8 @@ const Contact = () => {
     }
   };
 
-  const inputStyle = 'py-4 px-2 rounded text-[1.6rem] text-[--gray-100]';
+  const inputStyle =
+    'py-4 px-2 rounded text-[1.6rem] text-[--gray-60] bg-transparent border-2 border-[--blue-80]';
 
   return (
     <main>
