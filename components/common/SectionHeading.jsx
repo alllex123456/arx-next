@@ -13,7 +13,7 @@ const SectionHeading = ({ size, title, text, noPadding }) => {
       }`}
     >
       <div
-        className={`relative max-w-[--width] pt-[4.8rem] pb-[2.4rem] flex flex-col gap-2 z-10 rounded-[--border-radius]
+        className={`relative max-w-[--width] pt-[4.8rem] pb-[2.4rem] flex flex-col gap-2 z-10 rounded-[--border-radius] ||| md:pb-4
         }`}
       >
         <Label size={size} title={title} text={text} />

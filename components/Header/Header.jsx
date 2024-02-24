@@ -9,7 +9,7 @@ const Header = () => {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <header className="relative z-20 px-[--padding] ||| md:px-0">
+    <header className="relative z-20 px-[--padding]">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

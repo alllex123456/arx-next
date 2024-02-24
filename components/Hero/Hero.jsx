@@ -13,7 +13,7 @@ const Hero = ({ heading, home, animationKey }) => {
       className={`relative ${
         home
           ? 'h-[93vh] flex items-center justify-center ||| lg:h-[100%] lg:mt-[8rem]'
-          : 'mt-[10rem] rounded-[--border-radius] max-w-[--width] mx-auto ||| md:mt-10'
+          : 'mt-[10rem] rounded-[--border-radius] max-w-[--width] mx-auto ||| md:mt-20'
       }`}
     >
       {home && (
@@ -36,7 +36,7 @@ const Hero = ({ heading, home, animationKey }) => {
         }`}
       >
         {home ? (
-          <div className="tracking-tight w-[70%] text-center">
+          <div className="tracking-tight w-[70%] text-center md:w-[100%] md:px-4">
             <h1 className="||| md:text-[5rem]">{heading}</h1>
             <h5 className="text-[--gray-60] ||| lg:text-center sm:text-[2rem]">
               Technology and Refined Design Harmonize to Elevate Your Online
@@ -49,7 +49,7 @@ const Hero = ({ heading, home, animationKey }) => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="h-[50vh] tracking-tight w-[70%] text-center flex flex-col items-center justify-center"
+            className="h-[50vh] tracking-tight w-[70%] text-center flex flex-col items-center justify-center ||| md:h-auto"
           >
             <h1 className="text-white ||| md:text-[5rem]">{heading.title}</h1>
             <h6 className="||| md:text-[1.6rem]">{heading.subtitle}</h6>
