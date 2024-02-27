@@ -17,9 +17,10 @@ const SectionHeading = ({ size, title, text, noPadding }) => {
         }`}
       >
         <Label size={size} title={title} text={text} />
-        <h3 className="text-[--gray-60] max-w-[80rem] ||| md:text-[2.5rem]">
+        <h3 className="text-[--gray-40] max-w-[80rem] ||| md:text-[2.5rem]">
           {text}
         </h3>
+        <hr />
       </div>
     </motion.div>
   );

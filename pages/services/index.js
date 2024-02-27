@@ -48,7 +48,7 @@ const Services = () => {
         <SectionHeading
           noPadding
           title="Development"
-          text="Crafted vision, elevated by design"
+          text="Powerful technologies serving scalable solutions"
         />
       ),
       title: ['React', 'Next.js', 'Tailwind CSS'],
